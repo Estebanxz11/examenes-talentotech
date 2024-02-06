@@ -23,6 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 Route::get('/loginprueba', [ValidadorParticipanteController::class, 'index'])->name('login.prueba');
+Route::post('/validarregistro', [ValidadorParticipanteController::class, 'consultarUsuario']);
 
 Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(function () {
 
