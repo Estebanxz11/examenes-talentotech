@@ -23,10 +23,10 @@
                                     <thead class="tracking-wide font-bold rounded border-2 bg-green-500 text-white  transition shadow-md py-2 px-6 items-center">
                                         <tr>
                                             <th scope=" col" class="px-6 py-3 text-left text-xs font-extrabold  uppercase tracking-wider">
-                                                Item
+                                                {{ __('Item') }}
                                             </th>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-extrabold  uppercase tracking-wider">
-                                                Details
+                                                {{ __('Details') }}
                                             </th>
                                         </tr>
                                     </thead>
@@ -36,7 +36,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Name
+                                                            {{ __('Name') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -50,7 +50,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Description
+                                                            {{ __('Description') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -64,7 +64,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Status
+                                                            {{ __('Status') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -78,7 +78,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Details
+                                                            {{ __('Details') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -92,7 +92,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Created By
+                                                            {{ __('Created By') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -113,10 +113,10 @@
                 @if($questions->isEmpty())
                 <div class="px-4 py-5 my-3 sm:px-6">
                     <h1 class="text-sm leading-6 font-medium text-gray-900">
-                        No question under this section are found!
+                        {{ __('No question under this section are found!') }}
                     </h1>
                     <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                        Create some questions, they will appear here!
+                        {{ __('Create some questions, they will appear here!') }}
                     </p>
                 </div>
                 @else
@@ -128,13 +128,13 @@
                                     <thead class="tracking-wide font-bold rounded border-2 bg-green-500 text-white  transition shadow-md py-2 px-6 items-center">
                                         <tr>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                                Name
+                                                {{ __('Name') }}
                                             </th>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                                Status
+                                                {{ __('Status') }}
                                             </th>
                                             <th scope="col" class="relative px-6 py-3">
-                                                <span class="sr-only">Edit</span>
+                                                <span class="sr-only">{{ __('Edit') }}</span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -153,7 +153,7 @@
                                                 </div>
                                             </td>
                                             <td class="px-6 py-1">
-                                                <div class="text-sm text-gray-900">{{ $question->is_active === '1'  ? 'Yes' : 'No' }}</div>
+                                                <div class="text-sm text-gray-900">{{ $question->is_active === '1'  ? 'Si' : 'No' }}</div>
                                             </td>
                                             <td class="sm:flex align-middle justify-center items-center px-6 py-1 text-right text-sm font-medium">
                                                 <a href="{{ route('createQuestion', $section->id )}}" class="text-green-500 hover:text-green-700">

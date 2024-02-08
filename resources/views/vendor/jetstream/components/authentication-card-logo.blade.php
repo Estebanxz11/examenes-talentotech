@@ -1,3 +1,3 @@
 <a href="/">
-    <img src="{{ asset('/images/TalentoTech.png') }}" alt="Quiz Site" style="width:20%; margin: auto;" />
+    <img src="{{ asset('/images/logo.jpeg') }}" alt="Quiz Site" style="width:70px; height:70px" />
 </a>

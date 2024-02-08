@@ -28,10 +28,10 @@
                                     <thead class="tracking-wide font-bold rounded border-2 bg-green-500 text-white  transition shadow-md py-2 px-6 items-center">
                                         <tr>
                                             <th scope=" col" class="px-6 py-3 text-left text-xs font-extrabold  uppercase tracking-wider">
-                                                Item
+                                                {{ __('Item') }}
                                             </th>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-extrabold  uppercase tracking-wider">
-                                                Details
+                                                {{ __('Details') }}
                                             </th>
                                         </tr>
                                     </thead>
@@ -41,7 +41,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Question
+                                                            {{ __('Question') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -55,7 +55,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Explanation
+                                                            {{ __('Explanation') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -69,7 +69,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Status
+                                                            {{ __('Status') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -83,7 +83,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Details
+                                                            {{ __('Details') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -97,7 +97,7 @@
                                                 <div class="flex items-center">
                                                     <div class="ml-4">
                                                         <div class="text-sm font-medium text-gray-900">
-                                                            Created By
+                                                            {{ __('Created By') }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,10 +120,10 @@
                         <thead class="tracking-wide font-bold rounded border-2 bg-green-500 text-white  transition shadow-md py-2 px-6 items-center">
                             <tr class="max-w-auto">
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                    Answer
+                                    {{ __('Answer') }}
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                    Choice
+                                    {{ __('Choice') }}
                                 </th>
                             </tr>
                         </thead>

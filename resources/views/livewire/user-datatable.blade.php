@@ -20,21 +20,21 @@
     <div class="max-w-7xl m-4 mx-auto sm:px-6 lg:px-8">
         <div class="w-full flex">
             <div class="w-3/6 mx-1">
-                <input wire:model.debounce.300ms="search" type="text" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Search users...">
+                <input wire:model.debounce.300ms="search" type="text" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Buscar usuarios ...">
             </div>
             <div class="w-1/6 relative mx-1">
                 <select wire:model="orderBy" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                    <option value="name">Name</option>
-                    <option value="email">Email</option>
-                    <option value="created_at">Sign Up Date</option>
+                    <option value="name">Nombre</option>
+                    <option value="email">Correo electrónico</option>
+                    <option value="created_at">Fecha de registro</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 </div>
             </div>
             <div class="w-1/6 relative mx-1">
                 <select wire:model="orderAsc" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                    <option value="1">Ascending</option>
-                    <option value="0">Descending</option>
+                    <option value="1">Ascendente</option>
+                    <option value="0">Descendente</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 </div>
@@ -52,21 +52,21 @@
         </div>
         <div class="mx-auto">
             <div class="flex justify-between items-center py-4">
-                <a href="{{route('createSection')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">Create a Section</a>
-                <a href="{{route('adminhome')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">Back</a>
+                <a href="{{route('createSection')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">{{ __('Create a Section') }}</a>
+                <a href="{{route('adminhome')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">{{ __('Back') }}</a>
             </div>
             <div class="bg-white border-2 border-gray-300 shadow overflow-hidden sm:rounded-lg">
                 <div class="px-4 py-5 sm:px-6">
                     <dl>
                         <div class="bg-white sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6">
                             <dd class=" mt-1 font-extrabold text-gray-900 sm:mt-0 sm:col-span-1">
-                                User Name
+                                {{ __('User Name') }}
                             </dd>
                             <dd class="mt-1 font-extrabold text-gray-900 sm:mt-0 sm:col-span-1">
-                                Email Address
+                                {{ __('Email Address') }}
                             </dd>
                             <dd class="mt-1 font-extrabold text-gray-900 sm:mt-0 sm:col-span-1">
-                                Roles
+                                {{ __('Roles') }}
                             </dd>
                         </div>
                     </dl>

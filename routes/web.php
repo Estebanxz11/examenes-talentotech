@@ -6,7 +6,6 @@ use App\Http\Controllers\AppUserController;
 use App\Http\Controllers\ManageUserController;
 use App\Http\Controllers\SectionsController;
 use App\Http\Controllers\QuestionsController;
-use App\Http\Controllers\ValidadorParticipanteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +21,6 @@ use App\Http\Controllers\ValidadorParticipanteController;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
-Route::get('/loginprueba', [ValidadorParticipanteController::class, 'index'])->name('login.prueba');
-Route::post('/validarregistro', [ValidadorParticipanteController::class, 'consultarUsuario']);
 
 Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(function () {
 

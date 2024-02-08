@@ -11,16 +11,16 @@
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
             <div class="mx-auto">
                 <div class="flex justify-between items-center py-4">
-                    <a href="{{route('createSection')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">Create a Section</a>
-                    <a href="{{route('adminhome')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">Back</a>
+                    <a href="{{route('createSection')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">{{ __('Create a Section') }}</a>
+                    <a href="{{route('adminhome')}}" class="tracking-wide font-bold rounded border-2 border-blue-500 hover:border-blue-500 bg-blue-500 text-white hover:bg-blue-600 transition shadow-md py-2 px-6 items-center">{{ __('Back') }}</a>
                 </div>
                 @if($sections->isEmpty())
                 <div class="px-4 py-5 sm:px-6">
                     <h1 class="text-sm leading-6 font-medium text-gray-900">
-                        No Sections found!
+                        {{ __('No Sections found!') }}
                     </h1>
                     <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                        Looks like you have just landed! Once you have created any sections, they will be listed here.
+                        {{ __('Looks like you have just landed! Once you have created any sections, they will be listed here.') }}
                     </p>
                 </div>
                 @else
@@ -33,13 +33,13 @@
                                     <thead class="tracking-wide font-bold rounded border-2 bg-green-500 text-white  transition shadow-md py-2 px-6 items-center">
                                         <tr>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                                Name
+                                                {{ __('Name') }}
                                             </th>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                                Published
+                                                {{ __('Published') }}
                                             </th>
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-white uppercase tracking-wider">
-                                                Questions
+                                                {{ __('Questions') }}
                                             </th>
                                             <th scope="col" class="relative px-6 py-3">
                                                 <span class="sr-only">Edit</span>
@@ -61,7 +61,7 @@
                                                 </div>
                                             </td>
                                             <td class="px-6 py-1">
-                                                <div class="text-sm text-gray-900">{{ $section->is_active === '1'  ? 'Yes' : 'No' }}</div>
+                                                <div class="text-sm text-gray-900">{{ $section->is_active === '1'  ? 'Si' : 'No' }}</div>
                                             </td>
                                             <td class="px-6 py-1">
                                                 <div class="text-sm text-gray-900">{{ $section->questions_count }}</div>

@@ -34,6 +34,6 @@ class UserQuiz extends BaseChart
 
         return Chartisan::build()
             ->labels($ids)
-            ->dataset('Score', $scores);
+            ->dataset('Puntaje', $scores);
     }
 }

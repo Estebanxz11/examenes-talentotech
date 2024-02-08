@@ -35,6 +35,6 @@ class UserDatatable extends Component
             return false;
         }
         $user->delete($id);
-        session()->flash('success', 'User Deleted successfully!');
+        session()->flash('success', 'Usuario eliminado exitosamente!');
     }
 }
